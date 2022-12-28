@@ -1,0 +1,141 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - intent: deny
+  - action: utter_goodbye
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+
+- story: ask meaning of recency
+  steps:
+  - intent: meaning_of_recency
+  - action: utter_meaning_of_recency 
+
+- story: ask recency score
+  steps:
+  - intent: recency_score
+  - action: utter_recency_score  
+
+- story: ask status of recency
+  steps:
+  - intent: status_of_recency
+  - action: utter_status_of_recency  
+
+- story: ask keyword box
+  steps:
+  - intent: keyword_box
+  - action: utter_keyword_box  
+
+- story: ask status of keyword box
+  steps:
+  - intent: status_of_keyword_box
+  - action: utter_status_of_keyword_box 
+
+- story: ask meaning of dollar value
+  steps:
+  - intent: meaning_of_dollar_value
+  - action: utter_meaning_of_dollar_value  
+
+- story: ask status of dollar value
+  steps:
+  - intent: status_of_dollar_value
+  - action: utter_status_of_dollar_value 
+
+- story: ask quantity of NAICS codes
+  steps:
+  - intent: quantity_of_NAICS_codes
+  - action: utter_quantity_of_NAICS_codes 
+
+- story: ask type of business
+  steps:
+  - intent: type_of_business
+  - action: utter_type_of_business
+
+- story: ask vendors
+  steps:
+  - intent: vendors
+  - action: utter_vendors
+
+- story: ask relevance score 
+  steps:
+  - intent: relavance_score
+  - action: utter_relavance_score 
+
+- story: ask relevant contracts
+  steps:
+  - intent: relevant_contracts
+  - action: utter_relevant_contracts
+
+- story: ask dollar value range
+  steps:
+  - intent: dollar_value_range
+  - action: utter_dollar_value_range  
+
+- story: ask agency experience 
+  steps:
+  - intent: agency_experience
+  - action: utter_agency_experience  
+
+- story: ask info of agency experience 
+  steps:
+  - intent: info_of_agency_experience
+  - action: utter_info_of_agency_experience 
+
+- story: ask chart 
+  steps:
+  - intent: chart
+  - action: utter_chart  
+
+- story: ask award id 
+  steps:
+  - intent: award_id
+  - action: utter_award_id 
+
+- story: ask agency
+  steps:
+  - intent: agency
+  - action: utter_agency 
+
+- story: ask meaning of POP
+  steps:
+  - intent: meaning_of_POP
+  - action: utter_meaning_of_POP 
+
+- story: ask selection of recency criteria
+  steps:
+  - intent: selection_of_recency_criteria
+  - action: utter_selection_of_recency_criteria  
+
+- story: ask type of keywords used
+  steps:
+  - intent: type_of_keywords_used
+  - action: utter_type_of_keywords_used 
+
+- story: ask search criteria
+  steps:
+  - intent: search_criteria
+  - action: utter_search_criteria  
+
+
+- story: ask getstarted
+  steps:
+  - intent: getstarted
+  - action: utter_welcome_text

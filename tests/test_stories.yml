@@ -1,0 +1,271 @@
+#### This file contains tests to evaluate that your bot behaves as expected.
+#### If you want to learn more, please see the docs: https://rasa.com/docs/rasa/testing-your-assistant
+
+stories:
+# - story: happy path 1
+#   steps:
+#   - user: |
+#       hello there!
+#     intent: greet
+#   - action: utter_greet
+
+# - story: happy path 2
+#   steps:
+#   - user: |
+#       hello there!
+#     intent: greet
+#   - action: utter_greet
+#   - action: utter_next
+#   - user: |
+#       yes
+#     intent: continue
+#   - action: utter_continue
+
+# - story: sad path 1
+#   steps:
+#   - user: |
+#       hello there!
+#     intent: greet
+#   - action: utter_greet
+#   - action: utter_next
+#   - user: |
+#       no 
+#     intent: deny
+#   - action: utter_deny
+#     - user: |
+#       bye-bye!
+#     intent: goodbye
+#   - action: utter_goodbye
+
+- story: happy path 1
+  steps:
+  - user: |
+      hello
+    intent: greet
+  - action: utter_greet
+
+
+- story: happy path 2
+  steps:
+  - user: |
+      hello
+    intent: greet
+  - action: utter_greet
+
+  - user: |
+      bye-bye!
+    intent: goodbye
+  - action: utter_goodbye
+
+- story: sad path 1
+  steps:
+  - user: |
+      hello
+    intent: greet
+  - action: utter_greet
+  - user: |
+      not good
+    intent: mood_unhappy
+  - action: utter_cheer_up
+
+- story: sad path 2
+  steps:
+  - user: |
+      hello
+    intent: greet
+  - action: utter_greet
+  - user: |
+      not good
+    intent: mood_unhappy
+  - action: utter_cheer_up
+  - user: |
+      not really
+    intent: deny
+  - action: utter_goodbye
+
+- story: sad path 3
+  steps:
+  - user: |
+      hi
+    intent: greet
+  - action: utter_greet
+  - user: |
+      very terrible
+    intent: mood_unhappy
+  - action: utter_cheer_up
+  - user: |
+      no
+    intent: deny
+  - action: utter_goodbye
+
+- story: say goodbye
+  steps:
+  - user: |
+      bye-bye!
+    intent: goodbye
+  - action: utter_goodbye
+
+- story: ask meaning of recency
+  steps:
+  - user: |
+      What is Recency?
+  - intent: meaning_of_recency
+  - action: utter_meaning_of_recency 
+
+- story: ask recency score
+  steps:
+  - user: |
+      How Recency Score is calculated?
+  - intent: recency_score
+  - action: utter_recency_score  
+
+- story: ask status of recency
+  steps:
+  - user: |
+      Is recency a mandatory field?
+  - intent: status_of_recency
+  - action: utter_status_of_recency  
+
+- story: ask keyword box
+  steps:
+  - user: |
+      What can I add into keyword box?
+  - intent: keyword_box
+  - action: utter_keyword_box  
+
+- story: ask status of keyword box
+  steps:
+  - user: |
+      Is keyword box a mandatory field?
+  - intent: status_of_keyword_box
+  - action: utter_status_of_keyword_box 
+
+- story: ask meaning of dollar value
+  steps:
+  - user: |
+      What is Dollar Value?
+  - intent: meaning_of_dollar_value
+  - action: utter_meaning_of_dollar_value  
+
+- story: ask status of dollar value
+  steps:
+  - user: |
+      Is Dollar value a Mandatory field?
+  - intent: status_of_dollar_value
+  - action: utter_status_of_dollar_value 
+
+- story: ask quantity of NAICS codes
+  steps:
+  - user: |
+      How many NAICS Code I can enter?
+  - intent: quantity_of_NAICS_codes
+  - action: utter_quantity_of_NAICS_codes 
+
+- story: ask type of business
+  steps:
+  - user: |
+      What is the field type of business?
+  - intent: type_of_business
+  - action: utter_type_of_business
+
+- story: ask vendors
+  steps:
+  - user: |
+      Who are the vendors?
+  - intent: vendors
+  - action: utter_vendors
+
+- story: ask relevance score 
+  steps:
+  - user: |
+      What Relevance Score Indicates?
+  - intent: relavance_score
+  - action: utter_relavance_score 
+
+- story: ask relevant contracts
+  steps:
+  - user: |
+      What is the interpretation of Relevant Contracts?
+  - intent: relevant_contracts
+  - action: utter_relevant_contracts
+
+- story: ask dollar value range
+  steps:
+  - user: |
+      What can I interpret using dollar value range?
+  - intent: dollar_value_range
+  - action: utter_dollar_value_range  
+
+- story: ask agency experience 
+  steps:
+  - user: |
+      What is agency experience?
+  - intent: agency_experience
+  - action: utter_agency_experience  
+
+- story: ask info of agency experience 
+  steps:
+  - user: |
+      What can I get from agency experience?
+  - intent: info_of_agency_experience
+  - action: utter_info_of_agency_experience 
+
+- story: ask chart 
+  steps:
+  - user: |
+      What is the chart shown here?
+  - intent: chart
+  - action: utter_chart  
+
+- story: ask award id 
+  steps:
+  - user: |
+      What is award id?
+  - intent: award_id
+  - action: utter_award_id 
+
+- story: ask agency
+  steps:
+  - user: |
+      What is agency?
+  - intent: agency
+  - action: utter_agency 
+
+- story: ask meaning of POP
+  steps:
+  - user: |
+      What is the meaning of POP?
+  - intent: meaning_of_POP
+  - action: utter_meaning_of_POP 
+
+- story: ask selection of recency criteria
+  steps:
+  - user: |
+      How do I select the recency according to my requirements?
+  - intent: selection_of_recency_criteria
+  - action: utter_selection_of_recency_criteria  
+
+- story: ask type of keywords used
+  steps:
+  - user: |
+      What kind of keywords should I put here?
+  - intent: type_of_keywords_used
+  - action: utter_type_of_keywords_used 
+
+- story: ask search criteria
+  steps:
+  - user: |
+      What does the search criteria indicate
+  - intent: search_criteria
+  - action: utter_search_criteria  
+
+
+
+ - story: ask getstarted
+  steps:
+  - user: |
+      getstarted
+    intent: getstarted
+  - action: utter_welcome_text
+ 
+  

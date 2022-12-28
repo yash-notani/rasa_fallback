@@ -1,0 +1,167 @@
+version: "3.1"
+
+intents:
+  - greet
+  - meaning_of_recency
+  - recency_score
+  - status_of_recency
+  - keyword_box
+  - status_of_keyword_box
+  - meaning_of_dollar_value
+  - status_of_dollar_value
+  - quantity_of_NAICS_codes
+  - type_of_business
+  - vendors
+  - relavance_score
+  - relevant_contracts
+  - dollar_value_range
+  - agency_experience
+  - info_of_agency_experience
+  - chart
+  - award_id
+  - agency
+  - meaning_of_POP
+  - selection_of_recency_criteria
+  - type_of_keywords_used
+  - search_criteria
+  - deny
+  - goodbye
+  - bot_challenge
+  - mood_great
+  - mood_unhappy
+  - more_info
+  - getstarted
+
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you? please tell me what do you want to know ? "
+
+  utter_welcome_text:
+  - text : "Hi, I can help you with our Latest Market Research Product for Simplifying Market Research - CREPES"
+
+  utter_meaning_of_recency:
+  - text: "Recency refers to how long ago a vendor performed the work or provided 
+           the service/product. Typically, a reliable past performance reference 
+           falls within the past 3 to 5 years."
+
+  utter_recency_score:
+  - text: "Vendors that meet the search criteria are calculated based on their 
+           number of contracts and number of years for each contract. A numerical 
+           factor is applied based on the number of years for the contract so that 
+           vendors with more mature/completed contracts rank higher than vendors 
+           with fewer/newer contracts."
+
+  utter_status_of_recency:
+  - text: "Yes, you must specify a recency period to submit the market research query."
+
+  utter_keyword_box:
+  - text: "You can provide keyword(s) related to the work/service/product needed
+           (i.e. “Cybersecurity”)."
+
+  utter_status_of_keyword_box:
+  - text: "No, the keyword field is optional."
+
+  utter_meaning_of_dollar_value:
+  - text: "Dollar Value refers to the minimum contract dollar value of the work 
+           to be performed, giving insight into size and scope of the contract."
+
+  utter_status_of_dollar_value:
+  - text: "Yes, you must specify a dollar value to submit the market research query."
+
+  utter_quantity_of_NAICS_codes:
+  - text: "You may enter up to 10 NAICS Codes."
+
+  utter_type_of_business:
+  - text: "Type of business indicates a vendor's size standards, either large 
+           (other than small) or one of the following small business categories:
+
+              • Women-Owned Small Businesses (WOSB)
+              • Small Disadvantaged Businesses and 8(a) Small Businesses
+              • Historically Underutilized Business Zones (HUBZone) Small Businesses
+              • Service-Disabled Veteran-Owned Small Businesses (SDVOSB)"
+
+  utter_vendors:
+  - text: "Vendors are companies or contractors that receive government funding 
+           to perform work or provide services."
+
+  utter_relavance_score:
+  - text: "Relevance Score indicates the relevance of a vendors work based on 
+           their level of experience and matching the specified search criteria. 
+           Vendors that meet the search criteria are scored based on their number 
+           of contracts and number of years for each contract. A numerical factor 
+           is applied based on the number of years for the contract so that vendors
+           with more mature/completed contracts rank higher than vendors with 
+           fewer/newer contracts."
+
+  utter_relevant_contracts:
+  - text: "Relevant Contracts match or are closely related to the NAICS Codes 
+           and/or Keywords provided in the Market Research Requirements screen."
+
+  utter_dollar_value_range:
+  - text: "Dollar value range indicates the funding required to carry out the work 
+           described in the listed contracts and can be used to estimate budget for 
+           a similar scope of work."
+
+  utter_agency_experience:
+  - text: "Agency experience refers to whether a vendor has worked with a government
+           agency in the past."
+
+  utter_info_of_agency_experience:
+  - text: "Agency experience may indicate a vendors level of comfort/knowledge/expertise 
+           with working with a particular agency."
+
+  utter_chart:
+  - text: "The map shows vendors with an office or headquarters located in the specified 
+           city/state or ZIP code."
+
+  utter_award_id:
+  - text: "The award id is the unique identifier of the specific award being reported."
+
+  utter_agency:
+  - text: "Agency refers to the government agency that awarded/funded the contract."
+
+  utter_meaning_of_POP:
+  - text: "POP stands for Period of Performance and refers to the date start and 
+           end date of the vendor's engagement within the contract's requirements."
+
+  utter_selection_of_recency_criteria:
+  - text: "Typically, a reliable past performance reference falls within the past 
+           3 to 5 years. The requirements should be defined on an case-by-case 
+           basis according to the requirements of the agency and market research 
+           best practices."
+
+  utter_type_of_keywords_used:
+  - text: "Keywords should help refine/narrow down your search results. You can 
+           provide keyword(s) related to the work/service/product needed (i.e. “Cybersecurity”)."
+
+  utter_search_criteria:
+  - text: "Search criteria indicates the search parameters specified in the Market 
+           Research Requirements screen: Recency, Minimum Dollar Value, Business Types,
+           Keywords, and NAICS Codes."
+
+  utter_deny:
+  - text: "OK,fine No problem."
+
+  utter_cheer_up:
+  - text: "Please enter the information you want to ask !"
+
+  utter_goodbye:
+  - text: "Bye Bye, Have a nice day...!!"
+
+
+
+utter_did_that_help:
+  - text: "Did that help you? If not you can again ask me "
+
+utter_default:
+  - text: "I'm sorry, I can't help you."
+
+utter_ask_rephrase:
+  - text: "I'm sorry, I didn't quite understand that. Could you rephrase?"
+
+actions:
+- action_default_fallback
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

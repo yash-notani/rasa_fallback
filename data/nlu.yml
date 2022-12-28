@@ -1,0 +1,256 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: meaning_of_recency 
+  examples: |
+    - What is Recency? 
+    - meaning of recency 
+    - How do you explain Recency ? 
+    - what does recency indicates ? 
+    - What is the meaning of Recency ? 
+
+- intent: recency_score
+  examples: |
+    - How Recency Score is calculated ?
+    - How to calculate recency score ? 
+    - what is recency score ? 
+    - recency score ? 
+
+- intent: status_of_recency 
+  examples: |
+    - Is recency a mandatory field?
+    - Is recency a compulsory field?
+    - i have to fill recency field or not ? 
+    - mandatory/compulsory recency field 
+
+- intent:  keyword_box 
+  examples: |
+    - What can I add into keyword box?
+    - what type of keywords i have to add?
+    - which kerwords i have to place in box ?
+    - keyword box 
+
+- intent: status_of_keyword_box
+  examples: |
+    - Is keyword box a mandatory field? 
+    - Is keyword box a compulsory field?
+    - i have to fill keyword box field or not ? 
+    - mandatory/compulsory keyword box field 
+
+- intent: meaning_of_dollar_value
+  examples: |
+    - What is Dollar Value?
+    - how do you define dollar value?
+    - what is mean by dollar value ?
+    - meaning of dollar value 
+
+- intent: status_of_dollar_value
+  examples: |
+    - Is Dollar value a Mandatory field?
+    - Is Dollar value a compulsory field?
+    - i have to fill Dollar value field or not ? 
+    - mandatory/compulsory Dollar value field 
+
+- intent: quantity_of_NAICS_codes
+  examples: |
+    - How many NAICS Code I can enter?
+    - what NAICS codes I can enter here?
+    - NAICS codes
+
+- intent: type_of_business
+  examples: |
+    - What is the field type of business ? 
+    - What does type of business indicates ? 
+    - what do you understand from type of business?
+    - field type of business
+
+- intent: vendors
+  examples: |
+    - Who are the vendors ? 
+    - what is vendors?
+    - vendors
+
+- intent: relavance_score
+  examples: |
+    - What Relevance Score Indicates ?
+    - how relavance score defined ?
+    - what is mean by relavance score ? 
+    - what do you understand from relavance score ?
+    - What is Relevance Score?
+    - relavance score indications ? 
+
+- intent: relevant_contracts
+  examples: |
+    - What is the interpretation of Relevant Contracts?
+    - what is relevant contracts ?
+    - what does relevant contracts includes?
+    - relevant contracts
+
+- intent: dollar_value_range 
+  examples: |
+    - What can I interpret using dollar value range?
+    - what does dollar value range indicates ? 
+    - dollar value range 
+
+- intent: agency_experience
+  examples: |
+    - What is agency experience?
+    - How many year of experience do agency have ?
+    - agency experience 
+
+- intent: info_of_agency_experience
+  examples: |
+    - What can I get from agency experience?
+    - what do you understand from agency experience ? 
+    - info of agency experience
+
+- intent: chart
+  examples: |
+    - What is the chart shown here ?
+    - which information do i get in chart ?
+    - what does this chart indicates ? 
+    - chart
+
+- intent: award_id
+  examples: |
+    - What is award id?
+    - how i can defined award id ? 
+    - can you tell me award id for this ?
+    - award id 
+
+- intent: agency
+  examples: |
+    - What is agency?
+    - what so you understand from agency ? 
+    - agency 
+
+- intent: meaning_of_POP
+  examples: |
+    - What is the meaning of POP?
+    - full form of POP 
+    - meaning of POP
+    - What does POP stand for?
+    - What does the term POP mean?
+    - Exactly what does POP mean?
+
+- intent: selection_of_recency_criteria
+  examples: |
+    - How do I select the recency according to my requirements?
+    - How do I choose the recency based on my needs?
+    - What criteria should I use to choose the recency?
+    - How can I choose the recency based on the criteria I have?
+    - selection of recency criteria 
+
+- intent: type_of_keywords_used
+  examples: |
+    - What kind of keywords should I put here?
+    - What sort of keywords need should I include here?
+    - What type of search keywords should I use here?
+    - What kinds of specific keywords should I use here?
+    - What form of targeted keywords should I use here?
+    - types of keyword used here 
+
+- intent: search_criteria
+  examples: |
+    - What does the search criteria indicate?
+    - What do the search parameters suggest?
+    - What are the results of the search criteria?
+    - What are the search results telling us?
+    - search criteria
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - see you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: bot_challenge
+  examples: |
+    - Are you a bot?
+    - Are you a human?
+    - Am I talking to a bot?
+    - Am I talking to a human?
+    - are you 
+
+
+# ------------------------------------------------------------------------------------------------
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+
+- intent:  more_info
+  examples: |
+    - i want to know more ?
+    - more details 
+    - i want more information ?
+    - how i get more details about this ?
+    - more information
+
+- intent: getstarted
+  examples: |
+    - getstarted
